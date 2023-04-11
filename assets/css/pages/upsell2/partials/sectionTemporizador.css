@@ -7,7 +7,7 @@ section#temporizador {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #ff2525;
+  background-color: #f4c1c1;
   height: 50px;
   padding: 0 20px;
   z-index: 5;
@@ -15,7 +15,7 @@ section#temporizador {
 section#temporizador p {
   font-family: var(--light);
   font-size: clamp(1.2rem, 1vw, 1.4rem);
-  color: var(--cor-branco);
+  color: var(--cor-preto);
 }
 section#temporizador p span {
   font-family: var(--medium);
