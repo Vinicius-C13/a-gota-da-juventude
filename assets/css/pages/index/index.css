@@ -1,0 +1,20 @@
+/* Global */
+@import '../../global/global.css';
+
+/* Partials */
+@import './partials/sectionModal.css';
+@import './partials/sectionApresentacao.css';
+@import './partials/sectionBeneficios.css';
+@import './partials/sectionVideos.css';
+@import './partials/sectionDetalhes.css';
+@import './partials/sectionVideo.css';
+@import './partials/sectionAtua.css';
+@import './partials/sectionDiferencial.css';
+@import './partials/sectionComprar.css';
+@import './partials/sectionGarantia.css';
+@import './partials/sectionFotos.css';
+@import './partials/sectionNecessidade.css';
+@import './partials/sectionCapsulas.css';
+@import './partials/sectionDuvidas.css';
+@import './partials/sectionFunciona.css';
+@import './partials/footer.css';

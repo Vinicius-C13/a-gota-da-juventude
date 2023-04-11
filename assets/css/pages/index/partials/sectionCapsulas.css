@@ -1,0 +1,123 @@
+/* <section id="capsulas"> */
+section#capsulas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	position: relative;
+	width: 100%;
+}
+/* texto destaque */
+section#capsulas .titulo {
+  width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: solid 2px var(--cor-pele-escuro);
+	padding: 30px 20px;
+	background-color: var(--cor-branco);
+	z-index: 1;
+}
+section#capsulas .titulo h2 {
+	font-family: var(--estilo);
+	font-size: clamp(1.5rem, 1vw, 2rem);
+	color: var(--cor-preto);
+	line-height: 1.5;
+}
+section#capsulas .titulo p {
+	font-family: var(--light);
+	font-size: clamp(1.2rem, 1vw, 1.4rem);
+	color: var(--cor-marrom-escuro);
+	line-height: 1.5;
+}
+/* itens */
+section#capsulas .itens {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+  padding: 0 120px;
+	width: 100%;
+}
+section#capsulas .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px;
+  border-left: 2px solid var(--cor-pele-escuro);
+  border-right: 2px solid var(--cor-pele-escuro);
+  width: 50%;
+}
+section#capsulas .item.primeiro {
+  border-right: 0;
+}
+/* titulo */
+section#capsulas .item .imagem {
+  display: flex;
+  align-items: center;
+}
+section#capsulas .item .imagem h3 {
+	font-family: var(--estilo);
+	font-size: clamp(1.5rem, 1vw, 2rem);
+	color: #fd2929;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 0 0 20px;
+	line-height: 1.3;
+}
+section#capsulas .item.primeiro .imagem h3 {
+	color: var(--cor-verde);
+}
+section#capsulas .item p {
+	font-family: var(--light);
+	font-size: clamp(1rem, 1vw, 1.2rem);
+	color: var(--cor-marrom-escuro);
+  line-height: 1.5;
+  margin: 20px 0 0 0;
+}
+section#capsulas .item img {
+  width: 100%;
+  max-width: 130px;
+}
+/* responsividade */
+@media screen and (max-width: 1000px) {
+	/* <section class="capsulas"> */
+	section#capsulas {
+		padding: 0;
+	}
+	/* itens */
+	section#capsulas .itens {
+		overflow-x: scroll;
+		padding: 0 20px;
+	}
+	section#capsulas .itens::-webkit-scrollbar {
+		display: none;
+	}
+	section#capsulas .item {
+		width: 100%;
+		min-width: 280px;
+		padding: 40px 20px;
+	}
+  section#capsulas .item .imagem {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  section#capsulas .item .imagem h3 {
+    font-family: var(--light);
+    font-size: clamp(1.2rem, 1vw, 1.4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+    max-width: 500px;
+  }
+  section#capsulas .item .imagem h3 span {
+    font-family: var(--estilo);
+    font-size: clamp(1.2rem, 1vw, 1.4rem);
+    font-size: clamp(1.5rem, 1vw, 2rem);
+  }
+	section#capsulas .item p {
+		margin: 0;
+	}
+}

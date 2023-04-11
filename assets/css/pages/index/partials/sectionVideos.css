@@ -1,0 +1,74 @@
+/* <section class="apresentacao"> */
+section#videos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  padding: 70px 100px 80px 100px;
+  background-color: var(--cor-marrom);
+}
+/* Textos */
+section#videos .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+section#videos .titulo h2 {
+  font-family: var(--estilo);
+  font-size: clamp(3rem, 1vw, 3.5rem);
+  color: var(--cor-branco);
+}
+section#videos .titulo p {
+  font-family: var(--light);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.8;
+  margin: 10px 0 0 0;
+}
+/* Textos */
+section#videos .itens {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+section#videos .itens .video {
+  width: 32%;
+}
+section#videos .itens .video .tamanho {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+section#videos .itens .video .tamanho iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 1000px) {
+  section#videos {
+    padding: 40px 20px 60px 20px;
+  }
+  /* Textos */
+  section#videos .titulo h2 {
+    font-size: clamp(2rem, 1vw, 2.5rem);
+    width: 100%;
+    max-width: 250px;
+  }
+  /* Textos */
+  section#videos .itens {
+    flex-direction: column;
+    margin: 0;
+  }
+  section#videos .itens .video {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+}

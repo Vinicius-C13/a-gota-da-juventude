@@ -1,0 +1,146 @@
+/* <section id="funciona"> */
+section#funciona {
+	position: relative;
+	display: flex;
+	width: 100%;
+  background-color: var(--cor-pele-escuro);
+}
+section#funciona img.frascos {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 10%;
+  width: 20%;
+  z-index: 3;
+}
+/* Parte circulo */
+section#funciona .parte.circulo {
+  position: relative;
+  width: 25%;
+  background-color: var(--cor-marrom);
+  overflow: hidden;
+}
+section#funciona .parte.circulo img {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 200%;
+  animation: rodandoContrario 10s linear infinite;
+  z-index: 1;
+}
+/* Parte textos */
+section#funciona .parte.texto {
+  position: relative;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 120px 100px 200px;
+	margin: 0 120px 0 0;
+	border-right: solid 2px var(--cor-pele-escuro);
+  z-index: 2;
+}
+/* Titulo */
+section#funciona .parte.texto .titulo h2 {
+  font-family: var(--estilo);
+  font-size: clamp(3rem, 1vw, 3.5rem);
+  color: var(--cor-marrom-escuro);
+}
+section#funciona .parte.texto .titulo h2 span {
+  color: var(--cor-verde);
+}
+/* Itens */
+section#funciona .parte.texto .itens {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+section#funciona .parte.texto .itens .item {
+	display: flex;
+	align-items: center;
+	margin: 20px 0 0 0;
+}
+section#funciona .parte.texto .itens .item .info h3 {
+	font-family: var(--medium);
+	font-size: clamp(1rem, 1vw, 1.2rem);
+	max-width: 600px;
+  line-height: 2;
+}
+section#funciona .parte.texto .itens .item .info p {
+	font-family: var(--light);
+	font-size: clamp(1rem, 1vw, 1.2rem);
+	max-width: 600px;
+  line-height: 2;
+}
+section#funciona .parte.texto .itens .item img {
+	max-width: 150px;
+  border-radius: 10px;
+	margin: 0 20px 0 0;
+}
+/* Botão de ação */
+section#funciona .parte.texto a {
+  padding: 20px;
+  max-width: 230px;
+  font-family: var(--medium);
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  color: var(--cor-verde);
+  background-color: var(--cor-verde-claro);
+  border: 2px solid var(--cor-verde-claro);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+section#funciona .parte.texto a img {
+  max-width: 15px;
+  transition: 0.3s all;
+}
+section#funciona .parte.texto a:hover {
+  border: 2px solid var(--cor-verde);
+}
+/* responsividade */
+@media screen and (max-width: 1000px) {
+  /* <section class="beneficios"> */
+  section#funciona {
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    padding: 40px 20px;
+  }
+  section#funciona img.frascos {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 300px;
+    transform: none;
+  }
+  /* Parte circulo */
+  section#funciona .parte.circulo {
+    display: none;
+  }
+  section#funciona .parte.circulo img {
+    display: none;
+  }
+  /* Parte textos */
+  section#funciona .parte.texto {
+    position: relative;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 30px 0 0 0;
+    margin: 0;
+    border: 0;
+  }
+  /* Titulo */
+  section#funciona .parte.texto .titulo h2 {
+    font-size: clamp(2rem, 1vw, 2.5rem);
+  }
+  /* Itens */
+  section#funciona .parte.texto .itens .item {
+    align-items: flex-start;
+  }
+  section#funciona .parte.texto .itens .item img {
+    max-width: 100px;
+  }
+}

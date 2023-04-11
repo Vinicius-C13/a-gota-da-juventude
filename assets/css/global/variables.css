@@ -1,0 +1,20 @@
+/* Essas são as variáveis para usar no site e ficar mais escalável a edição das coisas */
+:root {
+  --cor-branco: #FFFFFF;
+  --cor-preto: #000000;
+
+  --cor-pele: #f5ece8;
+  --cor-pele-escuro: #e4d2c9;
+  --cor-marrom: #8e695a;
+  --cor-marrom-escuro: #433934;
+
+  --cor-verde-claro: #c7e8d0;
+  --cor-verde: #6e9e7b;
+
+  --cor-vermelho-claro: #f4c1c1;
+  --cor-vermelho: #d63131;
+
+  --estilo: 'bodoni-moda';
+  --light: 'poppins-light';
+  --medium: 'poppins-medium';
+}

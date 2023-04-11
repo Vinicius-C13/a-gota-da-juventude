@@ -1,0 +1,49 @@
+section.fotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-branco);
+}
+section.fotos .titulo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 120px 40px 120px;
+}
+section.fotos .titulo h2 {
+  font-family: var(--estilo);
+  font-size: clamp(1.5rem, 1vw, 2rem);
+  color: var(--cor-preto);
+  line-height: 1.5;
+  width: 100%;
+  max-width: 800px;
+}
+section.fotos .titulo h2 span {
+  color: var(--cor-verde);
+}
+section.fotos .itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+section.fotos .itens img {
+  width: 14.28%;
+}
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  section.fotos .titulo {
+    padding: 40px 20px 30px 20px;
+  }
+  section.fotos .itens img {
+    width: 33.33%;
+  }
+  section.fotos .itens img.oculta {
+    display: none;
+  }
+}

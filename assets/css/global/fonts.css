@@ -1,0 +1,29 @@
+/* Fontes */
+@font-face {
+  font-family: 'disento';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://agotadajuventudade-arquivos.nyc3.cdn.digitaloceanspaces.com/fontes/disento.woff') format('woff');
+}
+@font-face {
+  font-family: 'poppins-light';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://agotadajuventudade-arquivos.nyc3.cdn.digitaloceanspaces.com/fontes/poppins-light.woff') format('woff');
+}
+@font-face {
+  font-family: 'poppins-medium';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://agotadajuventudade-arquivos.nyc3.cdn.digitaloceanspaces.com/fontes/poppins-medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'bodoni-moda';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://agotadajuventudade-arquivos.nyc3.cdn.digitaloceanspaces.com/fontes/bodoni-moda.woff') format('woff');
+}

@@ -1,0 +1,276 @@
+/* <section id="necessidade"> */
+section#necessidade {
+	position: relative;
+	display: flex;
+	width: 100%;
+	min-height: 120vh;
+	overflow: hidden;
+}
+/* Parte esquerda */
+section#necessidade .parte.esquerda {
+	position: relative;
+	width: 50%;
+	background-color: var(--cor-pele);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* Itens parte esquerda */
+section#necessidade .parte.esquerda .itens {
+	display: flex;
+	flex-direction: column;
+}
+section#necessidade .parte.esquerda .item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 12% 0;
+}
+section#necessidade .parte.esquerda .item.um {
+	margin-right: 100px;
+}
+section#necessidade .parte.esquerda .item.dois {
+	margin-right: 350px;
+}
+section#necessidade .parte.esquerda .item.tres {
+	margin-right: 300px;
+}
+section#necessidade .parte.esquerda .item p {
+	font-family: var(--light);
+	font-size: clamp(0.7rem, 1vw, 0.9rem);
+	color: var(--cor-marrom-escuro);
+	text-align: right;
+	line-height: 2;
+	max-width: 250px;
+	margin: 0 10px 0 0;
+}
+section#necessidade .parte.esquerda .item img {
+	max-width: 80px;
+}
+/* linhas */
+section#necessidade .parte.esquerda .item span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 150px;
+	height: 1px;
+	background-color: var(--cor-marrom);
+	opacity: 0.4;
+}
+section#necessidade .parte.esquerda .item.um span {
+	transform: rotate(45deg);
+	top: 170px;
+	right: -30px;
+	width: 180px;
+}
+section#necessidade .parte.esquerda .item.dois span {
+	top: 120px;
+	right: -160px;
+	transform: rotate(20deg);
+}
+section#necessidade .parte.esquerda .item.tres span {
+	top: 20px;
+	right: -120px;
+	transform: rotate(-20deg);
+}
+/* Parte direita */
+section#necessidade .parte.direita {
+	position: relative;
+	width: 50%;
+	background-color: var(--cor-pele);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* Itens parte direita */
+section#necessidade .parte.direita .itens {
+	display: flex;
+	flex-direction: column;
+}
+section#necessidade .parte.direita .item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 12% 0;
+}
+section#necessidade .parte.direita .item.quatro {
+	margin-left: 160px;
+}
+section#necessidade .parte.direita .item.cinco {
+	margin-left: 300px;
+}
+section#necessidade .parte.direita .item.seis {
+	margin-left: 300px;
+}
+section#necessidade .parte.direita .item p {
+	font-family: var(--light);
+	font-size: clamp(0.7rem, 1vw, 0.9rem);
+	color: var(--cor-marrom-escuro);
+	text-align: left;
+	line-height: 2;
+	max-width: 250px;
+	margin: 0 0 0 10px;
+}
+section#necessidade .parte.direita .item img {
+	max-width: 80px;
+}
+/* linhas */
+section#necessidade .parte.direita .item span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 1px;
+	background-color: var(--cor-marrom);
+	opacity: 0.4;
+}
+section#necessidade .parte.direita .item.quatro span {
+	transform: rotate(-45deg);
+	top: 180px;
+	left: -120px;
+	width: 220px;
+}
+section#necessidade .parte.direita .item.cinco span {
+	top: 150px;
+	left: -160px;
+	transform: rotate(-20deg);
+}
+section#necessidade .parte.direita .item.seis span {
+	top: 50px;
+	left: -150px;
+	transform: rotate(20deg);
+}
+/* Imagem de circulo */
+section#necessidade img.circulo {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	animation: rodandoContrarioComTranslate 10s linear infinite;
+	z-index: 1;
+}
+/* Imagem frascos */
+section#necessidade img.frascos {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 35%;
+	z-index: 1;
+}
+section#necessidade .fundo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 18%;
+	min-height: 150vh;
+	background-color: var(--cor-pele-escuro);
+	opacity: 0.8;
+}
+/* responsividade */
+@media screen and (max-width: 1000px) {
+	/* <section class="necessidade"> */
+	section#necessidade {
+		min-height: 100%;
+		flex-direction: column;
+	}
+	/* Parte esquerda */
+	section#necessidade .parte.esquerda {
+		width: 100%;
+		background-color: var(--cor-pele);
+		padding: 30px 0 100px 0;
+	}
+	/* Itens parte esquerda */
+	section#necessidade .parte.esquerda .itens {
+		position: relative;
+		border-right: solid 1px var(--cor-pele-escuro);
+		margin: 0 30px;
+		padding: 20px 20px 30% 20px;
+	}
+	section#necessidade .parte.esquerda .itens span.linha {
+		position: absolute;
+		bottom: -28px;
+		right: -13px;
+		transform: rotate(-45deg);
+		width: 80px;
+		height: 1px;
+		background-color: var(--cor-pele-escuro);
+	}
+	section#necessidade .parte.esquerda .item {
+		margin: 20px 0;
+	}
+	section#necessidade .parte.esquerda .item.um {
+		margin-right: 0;
+	}
+	section#necessidade .parte.esquerda .item.dois {
+		margin-right: 0;
+	}
+	section#necessidade .parte.esquerda .item.tres {
+		margin-right: 0;
+	}
+	section#necessidade .parte.esquerda .item img {
+		max-width: 50px;
+	}
+	/* linhas */
+	section#necessidade .parte.esquerda .item span {
+		display: none;
+	}
+	/* Parte direita */
+	section#necessidade .parte.direita {
+		width: 100%;
+		background-color: var(--cor-pele);
+		padding: 100px 0 30px 0;
+	}
+	/* Itens parte direita */
+	section#necessidade .parte.direita .itens {
+		position: relative;
+		border-left: solid 1px var(--cor-pele-escuro);
+		margin: 0 30px;
+		padding: 10% 20px 20px 20px;
+	}
+	section#necessidade .parte.direita .itens span.linha {
+		position: absolute;
+		top: -28px;
+		left: -12px;
+		transform: rotate(-45deg);
+		width: 80px;
+		height: 1px;
+		background-color: var(--cor-pele-escuro);
+	}
+	section#necessidade .parte.direita .item {
+		margin: 20px 0;
+	}
+	section#necessidade .parte.direita .item.quatro {
+		margin-left: 0;
+	}
+	section#necessidade .parte.direita .item.cinco {
+		margin-left: 0;
+	}
+	section#necessidade .parte.direita .item.seis {
+		margin-left: 0;
+	}
+	section#necessidade .parte.direita .item img {
+		max-width: 50px;
+	}
+	/* linhas */
+	section#necessidade .parte.direita .item span {
+		display: none;
+	}
+	/* Imagem de circulo */
+	section#necessidade img.circulo {
+		top: 50%;
+		width: 70%;
+	}
+	/* Imagem frascos */
+	section#necessidade img.frascos {
+		top: 46%;
+		width: 55%;
+	}
+	section#necessidade .fundo {
+		display: none;
+	}
+}

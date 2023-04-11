@@ -1,0 +1,121 @@
+/* <section id="duvidas"> */
+section#duvidas {
+	position: relative;
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+}
+/* parte marrom */
+section#duvidas .parte {
+  width: 20%;
+  background-color: var(--cor-pele-escuro);
+}
+/* parte texto */
+section#duvidas .texto {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cor-branco);
+  padding: 100px 120px 100px 220px;
+  margin: 0 120px 0 0;
+  border-right: solid 2px var(--cor-pele-escuro);
+}
+/* imagem frasco */
+section#duvidas .texto img.frasco {
+  position: absolute;
+  top: 50%;
+  left: -105px;
+  transform: translate(0, -50%);
+  width: 20%;
+}
+/* titulo */
+section#duvidas .texto h2 {
+  font-family: var(--estilo);
+  font-size: clamp(4rem, 1vw, 5rem);
+  color: var(--cor-marrom-escuro);
+  margin: 0 0 20px 0;
+}
+section#duvidas .texto h2 span {
+  color: var(--cor-verde);
+}
+/* item */
+section#duvidas .texto .itens .item {
+  margin: 30px 0;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+section#duvidas .texto .itens .item .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+section#duvidas .texto .itens .item .titulo img {
+  max-width: 10px;
+  margin: 0 10px 0 0;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+section#duvidas .texto .itens .item.ativo .titulo img {
+  transform: rotate(0deg);
+}
+/* pergunta */
+section#duvidas .texto .itens .item * {
+  pointer-events: none;
+}
+section#duvidas .texto .itens .item h3 {
+  font-family: var(--light);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-marrom-escuro);
+  line-height: 1.5;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+section#duvidas .texto .itens .item.ativo h3 {
+    font-family: var(--medium);
+}
+/* resposta */
+section#duvidas .texto .itens .item p {
+  font-family: var(--light);
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  color: var(--cor-marrom-escuro);
+  margin: 10px 0 10px 20px;
+  line-height: 0;
+  opacity: 0;
+  transition: 0.3s all;
+}
+section#duvidas .texto .itens .item.ativo p {
+  line-height: 1.5;
+  opacity: 1;
+}
+/* responsividade */
+@media screen and (max-width: 1000px) {
+  /* <section class="duvidas"> */
+  section#duvidas {
+    flex-direction: column-reverse;
+  }
+  /* parte marrom */
+  section#duvidas .parte {
+    display: none;
+  }
+  /* parte texto */
+  section#duvidas .texto {
+    width: 100%;
+    padding: 50px 20px 20px 20px;
+    margin: 0;
+    border-right: none;
+  }
+  /* imagem frasco */
+  section#duvidas .texto img.frasco {
+    display: none;
+  }
+  /* titulo */
+  section#duvidas .texto h2 {
+    font-family: var(--estilo);
+    font-size: clamp(3rem, 1vw, 2.5rem);
+    color: var(--cor-marrom-escuro);
+    margin: 0 0 20px 0;
+  }
+}

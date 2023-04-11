@@ -1,0 +1,111 @@
+section#modal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+section#modal.mostrar {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+section#modal.mostrar .quadro {
+  transform: scale(1);
+}
+section#modal .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--cor-branco);
+  padding: 40px;
+  border-radius: 10px;
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
+section#modal .quadro form p {
+  font-family: var(--estilo);
+  font-size: clamp(1.5rem, 1vw, 2rem);
+  color: var(--cor-marrom-escuro);
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+section#modal .quadro form p span {
+  color: var(--cor-verde);
+}
+section#modal .quadro form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+section#modal .quadro form input {
+  font-family: var(--medium);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-verde);
+  background-color: rgba(0, 0, 0, 0.01);
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  transition: 0.3s;
+}
+section#modal .quadro form input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+section#modal .quadro form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+section#modal .quadro form label {
+  font-family: var(--medium);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-preto);
+  margin: 0 0 5px 0;
+}
+section#modal .quadro form input[type="submit"] {
+  padding: 20px;
+  width: 100%;
+  font-family: var(--medium);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-verde);
+  background-color: var(--cor-verde-claro);
+  border: 2px solid var(--cor-verde-claro);
+  text-align: center;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  transition: 0.3s;
+}
+section#modal .quadro form input[type="submit"]:hover {
+  border: 2px solid var(--cor-verde);
+}
+section#modal .quadro button {
+  font-family: var(--medium);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-vermelho);
+  background-color: transparent;
+  margin: 15px 0 0 0;
+  text-align: center;
+  transition: 0.3s;
+}
+section#modal .quadro button:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 1000px) {
+  section#modal .quadro {
+    padding: 35px 25px;
+  }
+}

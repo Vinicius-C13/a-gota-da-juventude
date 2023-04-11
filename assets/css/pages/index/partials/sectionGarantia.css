@@ -1,0 +1,83 @@
+/* <section id="garantia"> */
+section#garantia {
+	position: relative;
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+  border-top: 2px solid var(--cor-pele-escuro);
+}
+/* parte marrom */
+section#garantia .parte {
+  width: 20%;
+  background-color: var(--cor-pele-escuro);
+}
+/* parte texto */
+section#garantia .texto {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cor-branco);
+  padding: 100px 120px 100px 220px;
+  margin: 0 120px 0 0;
+}
+/* imagem frasco */
+section#garantia .texto img.frasco {
+  position: absolute;
+  top: 50%;
+  left: -105px;
+  transform: translate(0, -50%);
+  width: 23%;
+}
+/* titulo */
+section#garantia .texto h2 {
+  font-family: var(--estilo);
+  font-size: clamp(2rem, 1vw, 3rem);
+  color: var(--cor-marrom-escuro);
+  width: 100%;
+  max-width: 600px;
+}
+section#garantia .texto h2 span {
+  color: var(--cor-verde);
+}
+section#garantia .texto p {
+  font-family: var(--light);
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  color: var(--cor-marrom-escuro);
+  line-height: 1.5;
+  margin: 20px 0 0 0;
+  width: 100%;
+  max-width: 650px;
+  transition: 0.3s all;
+}
+/* responsividade */
+@media screen and (max-width: 1000px) {
+  /* <section class="duvidas"> */
+  section#garantia {
+    flex-direction: column;
+  }
+  /* imagem frasco */
+  section#garantia .texto img.frasco {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: 90px;
+    margin: 0 20px 0 0;
+  }
+  /* parte texto */
+  section#garantia .texto {
+    width: 100%;
+    padding: 40px 20px 40px 20px;
+    margin: 0;
+    border-right: none;
+  }
+  section#garantia .texto h2 {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    font-size: clamp(1.5rem, 1vw, 2rem);
+  }
+}

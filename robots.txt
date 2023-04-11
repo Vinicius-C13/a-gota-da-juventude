@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://agotadajuventude.com.br/sitemap.xml

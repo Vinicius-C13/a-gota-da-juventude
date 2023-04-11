@@ -1,0 +1,251 @@
+/* <section id="detalhes"> */
+section#detalhes {
+	position: relative;
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+}
+/* Parte marrom */
+section#detalhes .parte.marrom {
+	position: relative;
+	width: 50%;
+	background-color: var(--cor-pele);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* Itens parte marrom */
+section#detalhes .parte.marrom .itens {
+	display: flex;
+	flex-direction: column;
+	padding: 0 30% 0 80px;
+}
+section#detalhes .parte.marrom .item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	padding: 0 80px 0 0;
+}
+section#detalhes .parte.marrom .item.margem {
+	margin: 100px 0 100px 0;
+}
+section#detalhes .parte.marrom .item.margem img {
+	margin: 0 50px 0 0;
+}
+section#detalhes .parte.marrom .item p {
+	font-family: var(--light);
+	font-size: clamp(1rem, 1vw, 1.2rem);
+	color: var(--cor-marrom-escuro);
+	text-align: right;
+	line-height: 2;
+	max-width: 250px;
+	margin: 0 10px 0 0;
+}
+section#detalhes .parte.marrom .item img {
+	max-width: 80px;
+}
+/* linhas */
+section#detalhes .parte.marrom .item span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 80px;
+	height: 1px;
+	background-color: var(--cor-marrom);
+	opacity: 0.4;
+}
+section#detalhes .parte.marrom .item.um span {
+	transform: rotate(45deg);
+	top: 100px;
+}
+section#detalhes .parte.marrom .item.dois span {
+	top: 32px;
+	right: 30px;
+}
+section#detalhes .parte.marrom .item.tres span {
+	top: -40px;
+	transform: rotate(-45deg);
+}
+/* Parte branca */
+section#detalhes .parte.branca {
+	position: relative;
+	width: 50%;
+	background-color: var(--cor-branco);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* Itens parte branca */
+section#detalhes .parte.branca .itens {
+	display: flex;
+	flex-direction: column;
+	padding: 0 80px 0 30%;
+}
+section#detalhes .parte.branca .item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	padding: 0 0 0 80px;
+}
+section#detalhes .parte.branca .item.margem {
+	margin: 100px 0 100px 50px;
+}
+section#detalhes .parte.branca .item p {
+	font-family: var(--light);
+	font-size: clamp(1rem, 1vw, 1.2rem);
+	color: var(--cor-marrom-escuro);
+	text-align: left;
+	line-height: 2;
+	max-width: 250px;
+	margin: 0 0 0 10px;
+}
+section#detalhes .parte.branca .item.seis p {
+  font-family: var(--medium);
+  color: var(--cor-marrom);
+}
+section#detalhes .parte.marrom .item.um p {
+  font-family: var(--medium);
+  color: var(--cor-marrom);
+}
+section#detalhes .parte.branca .item img {
+	max-width: 80px;
+  width: 80px;
+}
+/* linhas */
+section#detalhes .parte.branca .item span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 1px;
+	background-color: var(--cor-marrom);
+	opacity: 0.4;
+}
+section#detalhes .parte.branca .item.quatro span {
+	transform: rotate(-45deg);
+	top: 100px;
+}
+section#detalhes .parte.branca .item.cinco span {
+	top: 32px;
+	left: -20px;
+}
+section#detalhes .parte.branca .item.seis span {
+	transform: rotate(45deg);
+	top: -40px;
+}
+/* Imagem de circulo */
+section#detalhes img.circulo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	animation: rodandoContrarioComTranslate 10s linear infinite;
+	z-index: 1;
+}
+/* Imagem frascos */
+section#detalhes img.frascos {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 15%;
+	z-index: 1;
+}
+@media screen and (max-width: 1000px) {
+	/* <section class="detalhes"> */
+	section#detalhes {
+		flex-direction: column-reverse;
+		min-height: 100%;
+	}
+	/* Parte marrom */
+	section#detalhes .parte.marrom {
+		width: 100%;
+	}
+	/* Itens parte marrom */
+	section#detalhes .parte.marrom .itens {
+		position: relative;
+		padding: 200px 20px 40px 20px;
+		border-right: solid 1px var(--cor-pele-escuro);
+	}
+	section#detalhes .parte.marrom .itens span.linha {
+		position: absolute;
+		top: -32px;
+		right: -14px;
+		transform: rotate(45deg);
+		width: 90px;
+		height: 1px;
+		background-color: var(--cor-pele-escuro);
+	}
+	section#detalhes .parte.marrom .item {
+		padding: 0;
+	}
+	section#detalhes .parte.marrom .item.margem {
+		margin: 20px 0;
+	}
+	section#detalhes .parte.marrom .item.margem img {
+		margin: 0;
+	}
+	section#detalhes .parte.marrom .item img {
+    max-width: 60px;
+    width: 60px;
+	}
+	/* linhas */
+	section#detalhes .parte.marrom .item span {
+		display: none;
+	}
+	/* Parte branca */
+	section#detalhes .parte.branca {
+		width: 100%;
+	}
+	/* Itens parte branca */
+	section#detalhes .parte.branca .itens {
+		position: relative;
+		padding: 40px 20px 200px 20px;
+		border-left: solid 1px var(--cor-pele-escuro);
+	}
+	section#detalhes .parte.branca .itens span.linha {
+		position: absolute;
+		bottom: -32px;
+		left: -14px;
+		transform: rotate(45deg);
+		width: 90px;
+		height: 1px;
+		background-color: var(--cor-pele-escuro);
+	}
+	section#detalhes .parte.branca .item {
+		padding: 0;
+	}
+	section#detalhes .parte.branca .item.margem {
+		margin: 20px 0;
+	}
+	section#detalhes .parte.branca .item p {
+		font-size: clamp(1rem, 1vw, 1.2rem);
+		text-align: left;
+		margin: 0 10px 0 0;
+	}
+	section#detalhes .parte.branca .item img {
+    max-width: 60px;
+    width: 60px;
+		margin: 0 10px 0 0;
+	}
+	/* linhas */
+	section#detalhes .parte.branca .item span {
+		display: none;
+	}
+	/* Imagem de circulo */
+	section#detalhes img.circulo {
+		width: 70%;
+		max-width: 400px;
+	}
+	/* Imagem frascos */
+	section#detalhes img.frascos {
+		width: 30%;
+		max-width: 150px;
+	}
+}
