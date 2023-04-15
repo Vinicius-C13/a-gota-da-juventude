@@ -4,7 +4,7 @@ section#apresentacao {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px 80px 20px;
+  padding: 40px 20px 70px 20px;
   width: 100%;
 }
 /* Titulo */
@@ -15,7 +15,7 @@ section#apresentacao p {
   display: flex;
   align-items: flex-start;
   font-family: var(--medium);
-  font-size: clamp(1rem, 1vw, 1.2rem);
+  font-size: clamp(13px, 1vw, 1.2rem);
   color: #166537;
   line-height: 1.5;
   width: 100%;
@@ -35,11 +35,11 @@ section#apresentacao p > :nth-child(2) > strong {
 }
 section#apresentacao h2 {
   font-family: var(--medium);
-  font-size: clamp(1.3rem, 1vw, 1.5rem);
+  font-size: clamp(1.1rem, 1vw, 1.5rem);
   color: var(--cor-marrom-escuro);
   text-align: center;
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0 0 0;
   background-color: var(--cor-vermelho-claro);
   padding: 15px;
   border-radius: 5px;
@@ -70,7 +70,7 @@ section#apresentacao .parte {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: 30px 0 30px 0;
+  margin: 20px 0 20px 0;
   column-gap: 0px;
 }
 section#apresentacao .parte img {
@@ -78,7 +78,7 @@ section#apresentacao .parte img {
 }
 section#apresentacao .parte h5 {
   font-family: var(--medium);
-  font-size: clamp(1.4rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
   font-weight: 700;
   color: var(--cor-preto);
   max-width: 210px;
@@ -101,12 +101,12 @@ section#apresentacao .parte h5 :nth-child(2) {
   text-align: left;
 }
 section#apresentacao .parte h5 :nth-child(3) {
-  font-size: clamp(1.7rem, 1.5vw, 1.8rem);
+  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
 }
 
 section#apresentacao .avista {
   font-family: var(--light);
-  font-size: clamp(1.2rem, 1vw, 1.5rem);
+  font-size: clamp(1.1rem, 1vw, 1.5rem);
   color: var(--cor-preto);
   line-height: 1.5;
   max-width: 700px;
@@ -153,6 +153,6 @@ section#apresentacao button.negativo:hover {
   }
   /* Titulo */
   section#apresentacao h1 {
-    font-size: clamp(2rem, 1vw, 2.5rem);
+    font-size: clamp(1.8rem, 1vw, 2.5rem);
   }
 }

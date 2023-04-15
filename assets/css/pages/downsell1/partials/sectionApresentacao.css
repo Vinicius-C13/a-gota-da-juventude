@@ -4,7 +4,7 @@ section#apresentacao {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 20px 80px 20px;
+  padding: 60px 20px 60px 20px;
   width: 100%;
   background-image: url(../../../images/background.png);
   background-position: center;
@@ -25,7 +25,7 @@ section#apresentacao ul {
 
 section#apresentacao ul > :nth-child(2) {
   font-family: var(--medium);
-  font-size: clamp(13px, 1vw, 1.2rem);
+  font-size: clamp(12px, 1vw, 1.2rem);
   color: var(--cor-branco);
   line-height: 1.5;
   width: 100%;
@@ -59,6 +59,7 @@ section#apresentacao h2 {
   border-radius: 5px;
 }
 section#apresentacao h1 {
+  display: block;
   font-family: var(--estilo);
   font-size: clamp(2.5rem, 1vw, 3rem);
   color: var(--cor-branco);
@@ -69,10 +70,11 @@ section#apresentacao h1 {
 }
 section#apresentacao h1 span {
   color: var(--cor-vermelho-claro);
+  display: inline;
 }
 section#apresentacao h3 {
   font-family: var(--medium);
-  font-size: clamp(1.8rem, 1.6vw, 2rem);
+  font-size: clamp(1.4rem, 1.6vw, 2rem);
   color: var(--cor-branco);
   text-align: center;
   line-height: 1.5;
@@ -84,7 +86,7 @@ section#apresentacao .parte {
   display: grid;
   grid-template-columns: 2fr 1.5fr;
   align-items: center;
-  margin: 30px 0 10px 0;
+  margin: 20px 0 10px 0;
   column-gap: 0px;
 }
 
@@ -98,7 +100,7 @@ section#apresentacao .parte img {
 }
 section#apresentacao .parte h5 {
   font-family: var(--medium);
-  font-size: clamp(1.4rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
   color: var(--cor-branco);
   max-width: 210px;
   width: 100%;
@@ -108,7 +110,7 @@ section#apresentacao .parte h5 {
 
 section#apresentacao .parte h5 :nth-child(1) {
   width: min-content;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-right: auto;
   text-decoration: underline;
   text-align: center;
@@ -120,18 +122,18 @@ section#apresentacao .parte h5 :nth-child(2) {
   text-align: left;
 }
 section#apresentacao .parte h5 :nth-child(3) {
-  font-size: clamp(1.7rem, 1.5vw, 1.8rem);
+  font-size: clamp(1.5rem, 1.5vw, 1.8rem);
 }
 
 section#apresentacao .avista {
   font-family: var(--light);
-  font-size: clamp(1.3rem, 1vw, 1.5rem);
+  font-size: clamp(1.2rem, 1vw, 1.5rem);
   color: var(--cor-branco);
   text-align: center;
   line-height: 1.5;
   max-width: 700px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   opacity: 0.9;
 }
 
@@ -145,6 +147,7 @@ section#apresentacao button {
   background-color: var(--cor-verde-claro);
   border: 2px solid var(--cor-verde-claro);
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0 0 0;
@@ -154,6 +157,7 @@ section#apresentacao button img {
   width: 15px;
   max-width: 15px;
   transition: 0.3s all;
+  display: inline;
   margin: 0 0 0 20px;
 }
 section#apresentacao button:hover {
@@ -174,6 +178,6 @@ section#apresentacao button.negativo:hover {
   }
   /* Titulo */
   section#apresentacao h1 {
-    font-size: clamp(2rem, 1vw, 2.5rem);
+    font-size: clamp(1.8rem, 1vw, 2.5rem);
   }
 }
